@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>com.example.prodtracker</id>
+    <name>Productivity Tracker</name>
+    <version>0.1</version>
+    <vendor>you</vendor>
+
+    <description>
+        Tiny tracker: typing minutes, edits, time-in-file. Minimal UI in a tool window.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Productivity Tracker"
+                    anchor="bottom"
+                    factoryClass="com.example.prodtracker.TrackerToolWindowFactory"
+                    secondary="false"/>
+    </extensions>
+</idea-plugin>
